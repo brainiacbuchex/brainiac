@@ -1,0 +1,26 @@
+body {
+	background: #40ee6a;
+	text-align: center;
+}
+#main {
+	font-family: "Bookman Old Style";
+	font: 14;
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	background: #40ee6a;
+	margin: 25px auto;
+	border: solid 2px #ff3819;
+}
+h1 {
+	text-align: center;
+	font-family: "Batang";
+	font: 24pt;
+	color: #ff3819;
+	padding: 40px 0 0 0;
+}
+h3 {
+	text-align: center;
+	font-family: "Bookman Old Style";
+	font: 18pt;
+}	

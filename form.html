@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+	
+<head>
+<link href="style.css" type="text/css" rel="stylesheet">
+<title> Registration </title>
+</head>
+
+<body>
+	<header id ="main-header">
+	<div class="container">
+	<h1 style="text-align:center; color:black; background-color: #40ee6a; font-family:Times New Roman; ">Medical Care</h1>	
+	</div>
+</header>
+<nav id="navbar">
+<div class="container">
+	<ul>
+		<li><a href="home.html">Home</a></li>
+		<li><a href="form.html">Register</a></li>
+		<li><a href="verify.html">Verify</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+</nav>
+</div>
+<h2 style="color: brown; font-family: Bookman Old Style; "> Registration </h2>
+
+<div id ="main"> 
+<form action="demo.php" method="post">
+<fieldset><legend style="text-align: center;">Fill in your details</legend> 
+<p>Surname: <input type="text" name="name"></p>
+<p>Firstname: <input type="text" name="name"></p>
+<p>Reg No: <input type="text" name="regno"></p>
+<p>Department: <input type="text" name="dept"></p>
+<p>Level: 
+<select name ="dropdown">
+		<option value ="value1">Select</option>
+		<option value ="value1">100</option>
+		<option value ="value2">200</option>
+		<option value ="value3">300</option>
+		<option value ="value1">400</option>
+		<option value ="value2">500</option>
+		<option value ="value3">600</option>
+</select></p>
+
+<p>Genotype: 
+<select name ="dropdown">
+		<option value ="value1">Select</option>
+		<option value ="value1">AA</option>
+		<option value ="value2">AS</option>
+		<option value ="value3">SS</option>
+		<option value ="value1">AC</option>
+</select></p>
+<p>Blood group: 
+<select name ="dropdown">
+		<option value ="value1">Select</option>
+		<option value ="value2">A-</option>
+		<option value ="value3">A+</option>
+		<option value ="value1">B-</option>
+		<option value ="value1">B+</option>
+		<option value ="value1">AB-</option>
+		<option value ="value1">AB+</option>
+		<option value ="value1">O-</option>
+		<option value ="value1">O+</option>
+</select></p>
+
+<input id="submit" type="submit" value="Submit">
+</fieldset>
+</form>
+</div>
+
+
+
+<div id ="footer">
+	<footer style="color:red;"> Copyright &copy; 2019 </footer>
+	</div>
+
+
+<script src="./assets/jquery.js">
+</script>
+
+
+<script>
+
+$("#submit").click((e) => {
+	e.preventDefault();
+	$.get("localhost:5070").then()
+})
+
+</script>
+</body>
+</html>
